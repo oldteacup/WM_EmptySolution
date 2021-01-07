@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a7a6b42b-bfe7-4c2d-8496-cc7cf8fdf04f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NAudioService.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\FadeState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\PlayStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ProviderMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AudioObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAudioObjectControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAudioObjectProcess.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAudioObjectIO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAudioVisualization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Providers\FadeInOutProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resample\ResamplerMediaComObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AudioProcessService.cs" />
+  </ItemGroup>
+</Project>
