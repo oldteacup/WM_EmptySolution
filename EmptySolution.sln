@@ -5,7 +5,21 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{B1F7100D-96D1-4AD6-A236-B932ECF489EC}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common.Shared", "Common.Shared\Common.Shared.shproj", "{F3925268-C5C4-4C4A-ADE4-AF69D04CF272}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common.SQLitelib.Shared", "Common.SQLitelib.Shared\Common.SQLitelib.Shared.shproj", "{CE194BDE-6447-4E78-B827-89C9D863CEAD}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GoogleAnalysis.Shared", "GoogleAnalysis.Shared\GoogleAnalysis.Shared.shproj", "{2C73C2D2-CA43-4CF4-8CBF-645AC72B6E0A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NAudioService.Shared", "NAudioService.Shared\NAudioService.Shared.shproj", "{A7A6B42B-BFE7-4C2D-8496-CC7CF8FDF04F}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GoogleAnalysis.Shared\GoogleAnalysis.Shared.projitems*{2c73c2d2-ca43-4cf4-8cbf-645ac72b6e0a}*SharedItemsImports = 13
+		NAudioService.Shared\NAudioService.Shared.projitems*{a7a6b42b-bfe7-4c2d-8496-cc7cf8fdf04f}*SharedItemsImports = 13
+		Common.SQLitelib.Shared\Common.SQLitelib.Shared.projitems*{ce194bde-6447-4e78-b827-89c9d863cead}*SharedItemsImports = 13
+		Common.Shared\Common.Shared.projitems*{f3925268-c5c4-4c4a-ade4-af69d04cf272}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86

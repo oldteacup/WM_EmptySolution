@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f3925268-c5c4-4c4a-ade4-af69d04cf272</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BinaryStructConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Args\KeyboardHookEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Clipboard\BITMAPFILEHEADER.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Clipboard\BITMAPINFOHEADER.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handlers\AutoRunHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handlers\ClipboardHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handlers\HotkeyHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handlers\MemoryHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handlers\WindowHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ClipboardHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ControlHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\EnumHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ImageHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Hooks\KeyboardHook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\WindowBlur\ACCENTPOLICY.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\WindowBlur\ACCENTSTATE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\HOOKTYPE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\POINT.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\VALUES.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\VIRTUAL_KEYS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\WindowBlur\WINDOWCOMPOSITIONATTRIBUTE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\InteropValues\WindowBlur\WINDOWCOMPOSITIONATTRIBUTEDATA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interop\WindowBlur.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Interop\InteropValues\WindowBlur\" />
+  </ItemGroup>
+</Project>
